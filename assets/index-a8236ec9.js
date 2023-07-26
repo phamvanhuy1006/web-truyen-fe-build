@@ -1,0 +1,1 @@
+import{j as s,a7 as n,C as a,a8 as t,B as c,c as i}from"./main-3faada18.js";const e=o=>{const{children:r}=o;return s.jsx(n,{position:"static",sx:{background:a.WHITE,color:a.BLACK,mb:"20px"},children:s.jsx(t,{maxWidth:"lg",children:s.jsx(c,{className:i("container"),children:r})})})};export{e as P};

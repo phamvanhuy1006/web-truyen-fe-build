@@ -1,0 +1,17 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Set the base directory of the app (change 'your-app-directory' to your actual app directory)
+RewriteBase /your-app-directory/
+
+# Rewrite requests to the index.html file (for React Router)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html [L]
+
+# Set the cache control header for certain file types (optional)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|json)$">
+    Header set Cache-Control "public, max-age=31536000"
+  </FilesMatch>
+</IfModule>
