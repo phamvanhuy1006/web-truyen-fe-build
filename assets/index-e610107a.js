@@ -1,0 +1,1 @@
+import{j as s,bi as t,C as a,bj as n,f as i,t as c}from"./main-b898a6f9.js";const e=o=>{const{children:r}=o;return s.jsx(t,{position:"static",sx:{background:a.WHITE,color:a.BLACK,mb:"20px"},children:s.jsx(n,{maxWidth:"lg",children:s.jsx(i,{className:c("container"),children:r})})})};export{e as P};
